@@ -1,0 +1,41 @@
+{
+  "name": "lab-management-system",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@angular/animations": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/platform-browser": "^18.0.0",
+    "@angular/platform-browser-dynamic": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "@google/genai": "^1.29.0",
+    "clsx": "^2.1.1",
+    "lucide-angular": "^0.468.0",
+    "rxjs": "~7.8.0",
+    "tailwind-merge": "^2.3.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@analogjs/vite-plugin-angular": "^1.8.0",
+    "@angular/build": "^18.2.21",
+    "@angular/compiler-cli": "^18.0.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.4.2",
+    "vite": "^6.2.3"
+  }
+}
