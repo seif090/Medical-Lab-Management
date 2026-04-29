@@ -1,6 +1,5 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideAnimations } from '@angular/platform-browser/animations';
 import { 
   LUCIDE_ICONS,
   FlaskConical, 
@@ -30,9 +29,8 @@ import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideExperimentalZonelessChangeDetection(),
     provideRouter(routes),
-    provideAnimations(),
     {
       provide: LUCIDE_ICONS,
       useValue: { 
@@ -46,17 +44,17 @@ export const appConfig: ApplicationConfig = {
         Home, 
         PhoneCall, 
         BriefcaseBusiness, 
-        WalletCards,
-        LogOut,
-        Bell,
-        Search,
-        Menu,
-        X,
-        TrendingUp,
-        TrendingDown,
-        Clock,
-        CheckCircle2,
-        AlertCircle
+        WalletCards, 
+        LogOut, 
+        Bell, 
+        Search, 
+        Menu, 
+        X, 
+        TrendingUp, 
+        TrendingDown, 
+        Clock, 
+        CheckCircle2, 
+        AlertCircle 
       }
     }
   ]

@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [CommonModule, LucideAngularModule],
   template: `
-    <div class="space-y-6 animate-in fade-in duration-500">
+    <div class="space-y-6 animate-in fade-in duration-500 font-cairo">
       <div class="flex items-center justify-between">
         <h2 class="text-xl font-bold text-slate-900 border-r-4 border-sky-400 pr-3">قائمة المرضى</h2>
         <button class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded text-[13px] font-bold shadow-sm transition-all active:scale-95 flex items-center gap-2">

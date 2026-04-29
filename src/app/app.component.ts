@@ -26,7 +26,7 @@ import { LucideAngularModule } from 'lucide-angular';
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, LucideAngularModule],
   template: `
-    <div class="flex h-screen bg-[#f8fafc] text-[#1e293b] font-['Cairo']" dir="rtl">
+    <div class="flex h-screen bg-[#f8fafc] text-[#1e293b] font-cairo" dir="rtl">
       <!-- Sidebar -->
       <aside 
         class="fixed inset-y-0 right-0 z-50 w-[220px] bg-[#0f172a] text-[#f1f5f9] flex-shrink-0 shadow-xl lg:shadow-none transform transition-all duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0"
@@ -47,27 +47,53 @@ import { LucideAngularModule } from 'lucide-angular';
             </a>
             <a routerLink="/patients" routerLinkActive="active" class="sidebar-item">
               <span class="text-lg">👥</span>
-              <span>إدارة المرضى</span>
+              <span>المرضى</span>
+            </a>
+            <a routerLink="/tests" routerLinkActive="active" class="sidebar-item">
+              <span class="text-lg">📘</span>
+              <span>دليل التحاليل</span>
             </a>
             <a routerLink="/samples" routerLinkActive="active" class="sidebar-item">
               <span class="text-lg">🧪</span>
-              <span>العينات</span>
+              <span>تتبع العينات</span>
             </a>
             <a routerLink="/results" routerLinkActive="active" class="sidebar-item">
-              <span class="text-lg">📋</span>
-              <span>النتائج والتقارير</span>
+              <span class="text-lg">🖊️</span>
+              <span>إدخال النتائج</span>
             </a>
             <a routerLink="/billing" routerLinkActive="active" class="sidebar-item">
               <span class="text-lg">💰</span>
-              <span>الفواتير والمالية</span>
+              <span>الحسابات</span>
             </a>
+
+            <div class="px-5 py-3 text-[10px] uppercase font-black text-slate-500 tracking-widest mt-4">إضافات</div>
+
             <a routerLink="/home-visit" routerLinkActive="active" class="sidebar-item">
-              <span class="text-lg">🏠</span>
+              <span class="text-lg">📍</span>
               <span>الزيارات المنزلية</span>
             </a>
+            <a routerLink="/call-center" routerLinkActive="active" class="sidebar-item">
+              <span class="text-lg">📞</span>
+              <span>مركز الاتصال</span>
+            </a>
+            <a routerLink="/inventory" routerLinkActive="active" class="sidebar-item">
+              <span class="text-lg">📦</span>
+              <span>المخزون</span>
+            </a>
+            
+            <div class="px-5 py-3 text-[10px] uppercase font-black text-slate-500 tracking-widest mt-4">النظام</div>
+
             <a routerLink="/hr" routerLinkActive="active" class="sidebar-item">
-              <span class="text-lg">⚙️</span>
-              <span>الإعدادات</span>
+              <span class="text-lg">👔</span>
+              <span>الموظفين</span>
+            </a>
+            <a routerLink="/payroll" routerLinkActive="active" class="sidebar-item">
+              <span class="text-lg">💳</span>
+              <span>الرواتب</span>
+            </a>
+            <a routerLink="/reports" routerLinkActive="active" class="sidebar-item">
+              <span class="text-lg">📊</span>
+              <span>التقارير</span>
             </a>
           </nav>
           

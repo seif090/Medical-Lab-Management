@@ -7,7 +7,7 @@ import { LucideAngularModule } from 'lucide-angular';
   standalone: true,
   imports: [CommonModule, LucideAngularModule],
   template: `
-    <div class="space-y-6 animate-in fade-in duration-500">
+    <div class="space-y-6 animate-in fade-in duration-500 font-cairo">
       <div class="flex items-center justify-between">
         <h2 class="text-xl font-bold text-slate-900 border-r-4 border-sky-400 pr-3">إدارة وتتبع العينات</h2>
         <div class="flex gap-2">
@@ -53,9 +53,9 @@ import { LucideAngularModule } from 'lucide-angular';
                 <td class="px-4 py-3 text-slate-500 text-xs font-bold">{{ s.time }}</td>
                 <td class="px-4 py-3 text-center">
                   <span 
-                    class="status-pill inline-block"
+                    class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider inline-block"
                     [ngClass]="{
-                      'status-completed': s.status === 'مكتمل',
+                      'bg-emerald-50 text-emerald-700 border border-emerald-100': s.status === 'مكتمل',
                       'status-processing': s.status === 'قيد المعالجة',
                       'status-pending': s.status === 'بانتظار السحب'
                     }"
